@@ -3,13 +3,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
     <TextView
-        android:id="@+id/tv_btn_topwd"
+        android:id="@+id/tv_pwd_btn"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:text="second"
-        android:textColor="#f43605"
-        android:textSize="30dp" />
+        android:text="forstPwd"
+        android:textColor="#000"
+        android:textSize="50dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

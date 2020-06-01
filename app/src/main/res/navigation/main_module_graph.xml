@@ -24,6 +24,31 @@
         android:label="page2"
         tools:layout="@layout/fragment_second_layout">
 
+        <action
+            android:id="@+id/action_second"
+            app:destination="@id/pwd_graps"
+            app:enterAnim="@anim/cut_to_enter"
+            app:exitAnim="@anim/cut_to_exit" />
+
     </fragment>
+
+
+    <navigation android:id="@+id/pwd_graps"
+        android:label="pwd_page2"
+        app:startDestination="@id/fragment_pws">
+        <fragment
+            android:id="@+id/fragment_pws"
+            android:name="com.dream.navigationktdemo.fragment.ForgetPasswordFragment"
+            android:label="pwdpage"
+            tools:layout="@layout/fragment_forget_pwd_layout">
+            <action
+                android:id="@+id/action_pwd"
+                app:destination="@id/fragment_first"
+                app:enterAnim="@anim/cut_to_enter"
+                app:exitAnim="@anim/cut_to_exit" />
+
+        </fragment>
+
+    </navigation>
 
 </navigation>
