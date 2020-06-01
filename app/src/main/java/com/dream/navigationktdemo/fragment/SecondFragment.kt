@@ -12,6 +12,8 @@ import kotlinx.android.synthetic.main.fragment_second_layout.view.*
 
 class SecondFragment : Fragment(){
 
+    val args : SecondFragmentArgs by navArgs()
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -20,7 +22,7 @@ class SecondFragment : Fragment(){
         val ttt = arguments?.get("name")
         val root = inflater.inflate(R.layout.fragment_second_layout,container,false)
         root.apply {
-            tv_btn_topwd.text = "${ttt}9999"
+            tv_btn_topwd.text = "${args.sex}9999"
             tv_btn_topwd.setOnClickListener {
                 Navigation.findNavController(it).navigate(R.id.action_second)
             }

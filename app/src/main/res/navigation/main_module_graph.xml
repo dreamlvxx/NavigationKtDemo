@@ -10,16 +10,12 @@
         android:name="com.dream.navigationktdemo.fragment.FirstFragment"
         android:label="page1"
         tools:layout="@layout/fragment_first_layout">
+
         <action
             android:id="@+id/action_first"
             app:destination="@id/fragment_second"
             app:enterAnim="@anim/cut_to_enter"
             app:exitAnim="@anim/cut_to_exit" >
-
-            <argument
-                android:name="name"
-                app:argType="integer"
-                android:defaultValue="1" />
 
         </action>
 
@@ -30,6 +26,20 @@
         android:name="com.dream.navigationktdemo.fragment.SecondFragment"
         android:label="page2"
         tools:layout="@layout/fragment_second_layout">
+
+        <argument
+            android:name="name"
+            app:argType="integer"
+            android:defaultValue="1" />
+
+        <argument
+            android:name="sex"
+            app:argType="string" />
+
+        <argument
+            android:name="age"
+            app:argType="integer"
+            android:defaultValue="1" />
 
         <action
             android:id="@+id/action_second"
